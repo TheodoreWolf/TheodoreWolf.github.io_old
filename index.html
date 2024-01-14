@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<script>
+    function toggleTheme() {
+            // Get the current theme from the data-theme attribute
+            var currentTheme = document.documentElement.getAttribute('data-theme');
+
+            // Switch between 'dark' and 'light'
+            var newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            // Set the new theme
+            document.documentElement.setAttribute('data-theme', newTheme);
+        }
+</script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Theo Wolf</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <a onclick="toggleTheme()"> <img src="images/day-and-night-png--512.png" height="30" width="30"
+                    alt="Medium" /> </a>
+        </ul>
+        <ul>
+            <li><strong>Theo Wolf</strong></li>
+        </ul>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/projects.html">Projects</a></li>
+            <li><a href="pages/contact.html" role="button">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <article>
+            <section id="home">
+                <hgroup>
+                    <h2>Welcome to My Blog!</h2>
+                    <h3>From Physics to Machine Learning</h3>
+                </hgroup>
+                <div class="grid">
+                    <figure>
+                        <img src="images/profile_pic.jpg" alt="profile_pic" />
+                        <!-- <figcaption><a href="pages/about.html" target="_blank">About me</a></figcaption> -->
+                    </figure>
+                    <p>Hello, I am a Machine Learning Engineer with a background in Physics and Chemistry.
+                        I am very interested in applications of ML to science, particularly to the problem of climate
+                        change. <br>
+                        <br>
+                        I am currently working as a Machine Learning Engineer at <a href="https://carbonre.com/"
+                            target="_blank">Carbon
+                            Re</a>, a startup that uses machine learning to help heavy industry companies reduce their
+                        carbon
+                        footprint. <br>
+                        <br>
+                        <a href="pages/about.html" target="_blank">More about me</a>
+                    </p>
+                </div>
+            </section>
+        </article>
+
+
+        <section id="projects">
+            <hgroup>
+                <h2>My Projects</h2>
+                <h3>Highlighting My Work in ML</h3>
+            </hgroup>
+            <p>Discover my latest machine learning projects, where I've applied cutting-edge techniques to solve
+                real-world problems.</p>
+            <!-- Project 1 -->
+            <article>
+                <details>
+                    <summary>Physics-Informed Neural Networks with Pytorch</summary>
+                    <p>Wrote a Medium article about implementing PINNs with Pytorch. You can find the article <a
+                            href="https://medium.com/@theo.wolf/physics-informed-neural-networks-a-simple-tutorial-with-pytorch-f28a890b874a">here</a>
+                        and the code <a href="https://github.com/TheodoreWolf/pinns">here</a> .
+                        You can occasionally see my implementation of PINNs on ChatGPT.</p>
+                </details>
+            </article>
+
+            <!-- Project 2 -->
+            <article>
+                <details>
+                    <summary style="font-weight: bold;">Solving an Integrated Assesment Model with
+                        reinforcement learning</summary>
+                    <p> As part of my Masters at UCL, I worked on using Reinforcement Learning in an Integrated
+                        Assessment model.
+                        You can find my NeurIPS publication <a href="https://arxiv.org/abs/2312.06527">here</a> and my
+                        poster <a href="images/neuripsposterfinal.png">here</a>.</p>
+                </details>
+            </article>
+        </section>
+
+    </main>
+
+    <footer classes="container">
+        <div>
+            <a href="https://github.com/TheodoreWolf" target="_blank">
+                <img src="images/github-mark-white.png" height="30" width="30" alt="GitHub" />
+            </a>
+            <a href="https://www.linkedin.com/in/theo-wolf" target="_blank">
+                <img src="images/In-White-72.png" height="30" width="30" alt="LinkedIn" />
+            </a>
+            <a href="https://scholar.google.co.uk/citations?user=TRAhumoAAAAJ&hl" target="_blank">
+                <img src="images/1024px-Google_Scholar_logo.svg.png" height="30" width="30" alt="Google Scholar" />
+            </a>
+            <a href="https://medium.com/@theo.wolf" target="_blank">
+                <img src="images/icons8-medium-48.png" height="30" width="30" alt="Medium" />
+            </a>
+        </div>
+        <small>
+            <a href="https://theuselessweb.com/" target="_blank">Don't click me!</a>
+        </small>
+    </footer>
+
+</body>
+
+</html>
