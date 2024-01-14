@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<script>
+    function toggleTheme() {
+        // Get the current theme from the data-theme attribute
+        var currentTheme = document.documentElement.getAttribute('data-theme');
+
+        // Switch between 'dark' and 'light'
+        var newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+        // Set the new theme
+        document.documentElement.setAttribute('data-theme', newTheme);
+    }
+</script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Theo Wolf</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <a onclick="toggleTheme()"> <img src="../images/brightness-and-contrast.png" height="30" width="30"
+                    alt="light/dark" /> </a>
+        </ul>
+        <ul>
+            <li><strong>Theo Wolf</strong></li>
+        </ul>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" role="button">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="projects" class="container">
+        <article>
+            <section id="iam">
+                <h3>Solving an Integrated Assesment Model with
+                    reinforcement learning</h3>
+                <p>
+                    As part of my Masters at UCL, I worked on using Reinforcement Learning in an Integrated
+                    Assessment model.
+                    You can find my NeurIPS publication <a href="https://arxiv.org/abs/2312.06527">here</a> and my
+                    poster <a href="../images/neuripsposterfinal.png">here</a>.</p>
+            </section>
+        </article>
+
+        <article>
+            <section id="pinns">
+                <h3>Physics-Informed Neural Networks with Pytorch</h3>
+                <p>Wrote a Medium article about implementing PINNs with Pytorch. You can find the article <a
+                        href="https://medium.com/@theo.wolf/physics-informed-neural-networks-a-simple-tutorial-with-pytorch-f28a890b874a">here</a>
+                    and the code <a href="https://github.com/TheodoreWolf/pinns">here</a> .
+                    You can occasionally see my implementation of PINNs on ChatGPT.</p>
+            </section>
+        </article>
+       
+        <article>
+            <section id="gps">
+                <h3>Implementing Gaussian Processes with NumPy</h3>
+                Wrote an implementations of Gaussian Processes from scratch with just Numpy.
+                You can find the code <a href="https://github.com/TheodoreWolf/gps_numpy">here</a>
+                and the TowardsDataScience article I wrote as an explanation <a
+                    href="https://medium.com/towards-data-science/gaussian-processes-from-scratch-cfc11715730c">here</a>
+                .
+            </section>
+        </article>
+
+
+
+    </main>
+    <footer class="container">
+        <div>
+            <a href="https://github.com/TheodoreWolf" target="_blank">
+                <img src="../images/github-mark-white.png" height="30" width="30" alt="GitHub" />
+            </a>
+            <a href="https://www.linkedin.com/in/theo-wolf" target="_blank">
+                <img src="../images/In-White-72.png" height="30" width="30" alt="LinkedIn" />
+            </a>
+            <a href="https://scholar.google.co.uk/citations?user=TRAhumoAAAAJ&hl" target="_blank">
+                <img src="../images/1024px-Google_Scholar_logo.svg.png" height="30" width="30" alt="Google Scholar" />
+            </a>
+            <a href="https://medium.com/@theo.wolf" target="_blank">
+                <img src="../images/icons8-medium-48.png" height="30" width="30" alt="Medium" />
+            </a>
+            <a href="https://twitter.com/TheoW0lf" target="_blank">
+                <img src="../images/logo-white.png" height="30" width="30" alt="Twitter" />
+            </a>
+        </div>
+        <small>
+            <a href="https://theuselessweb.com/" target="_blank">Don't click me!</a>
+        </small>
+    </footer>
