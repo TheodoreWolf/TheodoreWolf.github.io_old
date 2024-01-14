@@ -19,14 +19,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Theo Wolf</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="icon" href="images/icons8-galaxy-50.png" type="image/png">
 </head>
 
 <body>
     <nav class="container-fluid">
-        <ul>
+        <!-- <ul>
             <a onclick="toggleTheme()"> <img src="images/brightness-and-contrast.png" height="30" width="30"
                     alt="light/dark" /> </a>
-        </ul>
+        </ul> -->
         <ul>
             <li><strong>Theo Wolf</strong></li>
         </ul>
@@ -48,18 +49,14 @@
                 <div class="grid">
                     <figure>
                         <img src="images/profile_pic.jpg" alt="profile_pic" />
-                        <!-- <figcaption><a href="pages/about.html" target="_blank">About me</a></figcaption> -->
                     </figure>
                     <p>Hello, I am a Machine Learning Engineer with a background in Physics and Chemistry.
                         I am very interested in applications of ML to science, particularly to the problem of climate
-                        change. <br>
-                        <br>
-                        I am currently working as a Machine Learning Engineer at <a href="https://carbonre.com/"
-                            target="_blank">Carbon
-                            Re</a>, a startup that uses machine learning to help heavy industry companies reduce their
-                        carbon
-                        footprint. <br>
-                        <br>
+                        change. <br><br>
+                        I am currently working as a Machine Learning Engineer at
+                        <a href="https://carbonre.com/" target="_blank">Carbon Re</a>,
+                        a startup that uses machine learning to
+                        help heavy industry companies reduce their carbon footprint. <br> <br>
                         <a href="pages/about.html"> More about me</a>
                     </p>
                 </div>
@@ -73,17 +70,40 @@
                 <h3>Highlighting My Work in ML</h3>
             </hgroup>
             <p>Here are some various projects I've worked on! </p>
-            <article>
-                <a href="pages/projects.html#iam">Solving an Integrated Assesment Model with
-                    reinforcement learning</a>
-            </article>
-            <article>
-                <a href="pages/projects.html#pinns"> Physics-Informed Neural Networks with Pytorch
-                </a>
-            </article>
-            <article>
-                <a href="pages/projects.html#gps"> Implementing Gaussian Processes with NumPy</a>
-            </article>
+            <a href="pages/projects.html#iam">
+                <article style="display: grid; grid-template-columns: 1fr 4fr; gap: 40px; margin: 0 auto">
+                    <div class="card-image" style="border-radius: 5px; overflow: hidden;">
+                        <img src="images/logo_small_green.png" alt="Image Description"
+                            style="width: 100%; height: auto;">
+                    </div>
+                    <div class="card-content">
+                        <h3>Solving an Integrated Assesment Model with
+                            reinforcement learning</h3>
+                        <!-- <p>Card text goes here. This is the section where you can add detailed information about the card
+                        content.</p> -->
+                    </div>
+                </article>
+            </a>
+            <a href="pages/projects.html#pinns">
+                <article style="display: grid; grid-template-columns: 1fr 4fr; gap: 40px; margin: 1 auto">
+                    <div class="card-image" style="border-radius: 5px; overflow: hidden;">
+                        <img src="images/pinns.png" alt="Image Description" style="width: 100%; height: auto;">
+                    </div>
+                    <div class="card-content">
+                        <h3>Physics-Informed Neural Networks with Pytorch</h3>
+                    </div>
+                </article>
+            </a>
+            <a href="pages/projects.html#gps">
+                <article style="display: grid; grid-template-columns: 1fr 4fr; gap: 40px; margin: 1 auto">
+                    <div class="card-image" style="border-radius: 5px; overflow: hidden;">
+                        <img src="images/gps_numpy.png" alt="Image Description" style="width: 100%; height: auto;">
+                    </div>
+                    <div class="card-content">
+                        <h3> Implementing Gaussian Processes with NumPy</h3>
+                    </div>
+                </article>
+            </a>
         </section>
 
     </main>
@@ -106,10 +126,17 @@
                 <img src="images/logo-white.png" height="30" width="30" alt="Twitter" />
             </a>
         </div>
-        <small>
+        <!-- <small>
             <a href="https://theuselessweb.com/" target="_blank">Don't click me!</a>
-        </small>
+        </small> -->
     </footer>
 </body>
 
 </html>
+<style>
+    footer.container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
