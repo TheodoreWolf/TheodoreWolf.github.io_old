@@ -58,16 +58,40 @@
                 </div>
             </section>
         </article>
+        <section>
+            <h1>Experience</h1>
+            <article>
+                <h3>Machine Learning Engineer</h3>
+                <h5>Carbon Re, 2022-Present</h5>
+                <p>Working on a variety of projects, including:
+                <ul>
+                    <li>I was tasked with making ML models based on high dimensional industrial time series.
+                        Most of the focus is on cement data which involves complex physical interactions. </li>
 
+                    <li>The work also involves maintaining a complex production environment. The pipeline consists of
+                        many steps:
+                        requesting live data from an API or MQTT (depending on the client),
+                        preprocessing the data with AWS lambdas, storing it in AWS timestream.
+                        This data is then fed to the inference service which loads ML models from WandB and sends the
+                        results to the online web-platform for the clients to view. </li>
+                </ul>
+                </p>
+            </article>
+
+        </section>
         <section>
             <h1>Education</h1>
             <article>
-                <h3>MSc Machine Learning, University College London, 2021-2022</h3>
+                <h3>MSc Machine Learning </h3>
+                <h5>University College London, 2021-2022</h5>
                 <p>Studied a wide variety of topics including
-                    NLP, RL, Bayesian Deep Learning, Variational inference. </p>
+                    NLP, RL, Bayesian Deep Learning, Variational inference.
+                    My dissertation was about using RL in Integrated Assessment Models, work that I then published at <a
+                        href="projects.html#iams">NeurIPS 2023</a>. </p>
             </article>
             <article>
-                <h3>BSc Astrophysics and Physical Chemistry, University College London, 2018-2021</h3>
+                <h3>BSc Astrophysics and Physical Chemistry</h3>
+                <h5> University College London, 2018-2021</h5>
                 <p>Starting from the BSc Natural Sciences, I specialised over time into Astrophysics and Physical
                     Chemistry.
                     Got to learn MatLab and some really interesting stuff about the large and small scales of our
@@ -97,7 +121,14 @@
                 <img src="../images/logo-white.png" height="30" width="30" alt="Twitter" />
             </a>
         </div>
-        <small>
+        <!-- <small>
             <a href="https://theuselessweb.com/" target="_blank">Don't click me!</a>
-        </small>
+        </small> -->
     </footer>
+    <style>
+        footer.container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
