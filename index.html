@@ -1,44 +1,11 @@
+---
+layout: default
+---
+
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-<script>
-    function toggleTheme() {
-        // Get the current theme from the data-theme attribute
-        var currentTheme = document.documentElement.getAttribute('data-theme');
-
-        // Switch between 'dark' and 'light'
-        var newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-        // Set the new theme
-        document.documentElement.setAttribute('data-theme', newTheme);
-    }
-</script>
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Theo Wolf</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <link rel="icon" href="images/icons8-galaxy-50.png" type="image/png">
-</head>
 
 <body>
-    <nav class="container-fluid">
-        <!-- <ul>
-            <a onclick="toggleTheme()"> <img src="images/brightness-and-contrast.png" height="30" width="30"
-                    alt="light/dark" /> </a>
-        </ul> -->
-        <ul>
-            <li><strong>Theo Wolf</strong></li>
-        </ul>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/about.html">About</a></li>
-            <li><a href="pages/projects.html">Projects</a></li>
-            <li><a href="pages/contact.html" role="button">Contact</a></li>
-        </ul>
-    </nav>
-
     <main class="container">
         <article>
             <section id="home">
@@ -108,35 +75,6 @@
 
     </main>
 
-    <footer class="container">
-        <div>
-            <a href="https://github.com/TheodoreWolf" target="_blank">
-                <img src="images/github-mark-white.png" height="30" width="30" alt="GitHub" />
-            </a>
-            <a href="https://www.linkedin.com/in/theo-wolf" target="_blank">
-                <img src="images/In-White-72.png" height="30" width="30" alt="LinkedIn" />
-            </a>
-            <a href="https://scholar.google.co.uk/citations?user=TRAhumoAAAAJ&hl" target="_blank">
-                <img src="images/1024px-Google_Scholar_logo.svg.png" height="30" width="30" alt="Google Scholar" />
-            </a>
-            <a href="https://medium.com/@theo.wolf" target="_blank">
-                <img src="images/icons8-medium-48.png" height="30" width="30" alt="Medium" />
-            </a>
-            <a href="https://twitter.com/TheoW0lf" target="_blank">
-                <img src="images/logo-white.png" height="30" width="30" alt="Twitter" />
-            </a>
-        </div>
-        <!-- <small>
-            <a href="https://theuselessweb.com/" target="_blank">Don't click me!</a>
-        </small> -->
-    </footer>
 </body>
 
 </html>
-<style>
-    footer.container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-</style>

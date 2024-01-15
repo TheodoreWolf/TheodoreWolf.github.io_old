@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<script>
+    function toggleTheme() {
+        // Get the current theme from the data-theme attribute
+        var currentTheme = document.documentElement.getAttribute('data-theme');
+
+        // Switch between 'dark' and 'light'
+        var newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+        // Set the new theme
+        document.documentElement.setAttribute('data-theme', newTheme);
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Theo Wolf</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="icon" href="../images/icons8-galaxy-50.png" type="image/png">
+</head>
+
+<body>
+    <nav class="container-fluid">
+        <!-- <ul>
+            <a onclick="toggleTheme()"> <img src="images/brightness-and-contrast.png" height="30" width="30"
+                    alt="light/dark" /> </a>
+        </ul> -->
+        <ul>
+            <li><strong>Theo Wolf</strong></li>
+        </ul>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/projects.html">Projects</a></li>
+            <li><a href="/pages/contact.html" role="button">Contact</a></li>
+        </ul>
+    </nav>
+
+</html>
